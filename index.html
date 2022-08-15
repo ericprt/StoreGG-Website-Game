@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoreGG Website Game</title>
+    <!-- web icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.svg" alt="Logo StoreGG" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToogle" aria-controls="navbarToogle">
+          <i class="bi bi-list" style="font-size: 28px"></i>
+        </button>
+        <div id="navbarToogle" class="collapse navbar-collapse gap-5 flex-grow-0">
+          <div class="navbar-nav gap-lg-4 mt-4 mt-lg-0">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#" onclick="handleClickMenu(this)"> Games </a>
+            <a class="nav-link" href="#" onclick="handleClickMenu(this)"> Rewards </a>
+            <a class="nav-link" href="#" onclick="handleClickMenu(this)"> Discover </a>
+            <a class="nav-link" href="#" onclick="handleClickMenu(this)"> Global Rank </a>
+          </div>
+          <button class="button btn-secondary mt-4 mt-lg-0">Sign In</button>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- main start -->
+    <main class="main-content">
+      <section class="hero-banner flex-lg-row flex-column align-items-md-center">
+        <div class="content">
+          <p class="small-text">Halo gamers,</p>
+          <h1 class="heading lh-base">Topup & Get a <span class="highlight">New Experience</span> in Gaming</h1>
+          <p class="caption py-4">Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati</p>
+          <div class="d-flex gap-4 align-items-sm-center flex-column flex-sm-row">
+            <button class="button btn-primary">Get Started</button>
+            <a href="#" class="btn-link text-center">Learn More</a>
+          </div>
+        </div>
+        <img src="./assets/images/banner-image.png" alt="Banner StoreGG" class="d-md-block d-none" width="55%" data-aos="zoom-in" />
+      </section>
+      <!-- steps start -->
+      <section class="container-steps mt-100 gap-4">
+        <h2 class="heading lh-base text-center">
+          It’s Really That <br />
+          Easy to Win the Game
+        </h2>
+        <div id="steps" class="d-flex gap-5 justify-content-center flex-column flex-lg-row"></div>
+      </section>
+      <!-- steps end -->
+      <!-- game featured start -->
+      <section class="container-featured mt-100 gap-4">
+        <h2 class="heading lh-base text-center">
+          Our Featured <br />
+          Games This Year
+        </h2>
+        <div id="features" class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'></div>
+      </section>
+      <!-- game featured end -->
+      <!-- stats start -->
+      <section class="container-stats flex-md-row flex-column text-md-start">
+        <div>
+          <h2 class="heading">290M+</h2>
+          <p class="small-text">Players Top Up</p>
+        </div>
+        <div class="vertical-line d-none d-md-block"></div>
+        <div class="horizontal-line d-block d-md-none"></div>
+        <div>
+          <h2 class="heading">12.500</h2>
+          <p class="small-text">Games Available</p>
+        </div>
+        <div class="vertical-line d-none d-md-block"></div>
+        <div class="horizontal-line d-block d-md-none"></div>
+        <div>
+          <h2 class="heading">99,9%</h2>
+          <p class="small-text">Happy Players</p>
+        </div>
+        <div class="vertical-line d-none d-md-block"></div>
+        <div class="horizontal-line d-block d-md-none"></div>
+        <div>
+          <h2 class="heading">4.7</h2>
+          <p class="small-text">Rating Worldwide</p>
+        </div>
+      </section>
+      <!-- stats end -->
+      <!-- story start -->
+      <section class="container-story flex-lg-row flex-column align-items-md-center">
+        <img src="./assets/images/story-image.png" alt="Story StoreGG" class="d-md-block d-none" width="50%" data-aos="zoom-in-up" />
+        <div class="content">
+          <h1 class="heading lh-base">
+            Win the battle. <br />
+            Be the Champion.
+          </h1>
+          <p class="caption py-4">Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati</p>
+          <button class="button btn-secondary">Read Story</button>
+        </div>
+      </section>
+      <!-- story end -->
+    </main>
+    <!-- main end -->
+    <!-- footer -->
+    <footer class="footer flex-lg-row flex-column">
+      <div class="about align-items-sm-start text-sm-start mb-5 mb-lg-0">
+        <img src="./assets/images/logo.svg" alt="Logo StoreGG" />
+        <p class="caption m-0 py-4">
+          StoreGG membantu gamers <br />
+          untuk menjadi pemenang sejati
+        </p>
+        <p class="caption">Copyright 2022. All Rights Reserved.</p>
+      </div>
+      <div class="footer-menu justify-content-md-between">
+        <div class="lists">
+          <p class="caption fw-semibold mb-2">Company</p>
+          <a href="#" class="btn-link">About Us</a>
+          <a href="#" class="btn-link">Press Release</a>
+          <a href="#" class="btn-link">Terms of Use</a>
+          <a href="#" class="btn-link">Privacy & Policy</a>
+        </div>
+        <div class="lists">
+          <p class="caption fw-semibold mb-2">Support</p>
+          <a href="#" class="btn-link">Refund Policy</a>
+          <a href="#" class="btn-link">Unlock Rewards</a>
+          <a href="#" class="btn-link">Live Chatting</a>
+        </div>
+        <div class="lists">
+          <p class="caption fw-semibold mb-2">Connect</p>
+          <p class="caption m-0">hi@store.gg</p>
+          <p class="caption m-0">team@store.gg</p>
+          <p class="caption m-0">Pasific 12, Jakarta Selatan</p>
+          <p class="caption m-0">021 - 1122 - 9090</p>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Javascript start -->
+
+    <!-- nav menu script -->
+    <script src="./js/navMenu.js"></script>
+
+    <!-- steps script -->
+    <script src="./js/steps.js"></script>
+
+    <!-- features script -->
+    <script src="./js/features.js"></script>
+
+    <!-- flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Javascript end  -->
+  </body>
+</html>

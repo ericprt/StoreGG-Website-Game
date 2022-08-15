@@ -1,0 +1,283 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* color root */
+:root {
+  --navy: #0c145a;
+  --purple: #4d17e2;
+  --blue: #00baff;
+  --white: #ffffff;
+  --gray-primary: #f9faff;
+  --gray-secondary: #e7eaf5;
+  --gray-text: #7e8cac;
+}
+
+/* style */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+a {
+  font-size: 18px;
+}
+
+.navbar .container-fluid {
+  padding: 40px 120px;
+}
+
+.main-content {
+  padding-inline: 120px;
+}
+
+.navbar-nav .nav-link {
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--gray-text);
+}
+
+.navbar-nav a.nav-link.active,
+.navbar-nav a.nav-link:hover {
+  font-weight: 500;
+  color: var(--navy);
+}
+
+button.navbar-toggler {
+  border: none;
+  color: var(--navy);
+}
+
+button.navbar-toggler:focus,
+.btn {
+  box-shadow: none;
+}
+
+.button {
+  border-radius: 100px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 12px 40px;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: var(--gray-secondary);
+  color: var(--navy);
+}
+
+.btn-secondary:hover {
+  background-color: #e0e3ee;
+}
+
+.btn-primary {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #4a17d6;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.content {
+  max-width: 472px;
+}
+
+.highlight {
+  background: linear-gradient(var(--blue), var(--blue)) 0 80% / 100% 8px no-repeat;
+}
+
+.small-text {
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--gray-text);
+  margin: 0;
+}
+
+.heading {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.caption {
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--navy);
+}
+
+a.btn-link {
+  color: var(--navy);
+  line-height: 32px;
+  text-decoration: none;
+}
+
+a.btn-link:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.container-steps,
+.container-featured {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.card-step {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--gray-primary);
+  border-radius: 26px;
+}
+
+.img-feature {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 26px;
+}
+
+.card-feature {
+  position: relative;
+  width: 205px;
+  height: 270px;
+}
+
+.card-feature .transbox {
+  position: absolute;
+  inset: 12px;
+  color: white;
+  width: calc(205px - 24px);
+  height: calc(270px - 24px);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  visibility: hidden;
+}
+
+.card-feature:hover .transbox {
+  visibility: visible;
+}
+
+.card-feature:hover .img-feature {
+  outline: 4px solid var(--navy);
+  padding: 12px;
+  border-radius: 26px;
+}
+
+.transbox .icon,
+.transbox .text {
+  display: none;
+}
+
+.transbox .icon {
+  display: block;
+  align-self: center;
+  width: 54px;
+  margin-bottom: 50px;
+}
+
+.transbox .text {
+  display: block;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0;
+  line-height: 32px;
+}
+
+.container-stats {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.vertical-line {
+  height: 94px;
+  border-left: 1px solid var(--gray-secondary);
+}
+
+.horizontal-line {
+  width: 240px;
+  border-top: 1px solid var(--gray-secondary);
+}
+
+.container-story {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 80px 120px;
+  background-color: var(--gray-primary);
+  display: flex;
+  column-gap: 120px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list a .caption {
+  text-decoration: none;
+}
+
+/* Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+  .navbar .container-fluid,
+  .main-content,
+  .footer {
+    padding-inline: 60px;
+  }
+  .hero-banner {
+    margin-top: 50px;
+  }
+  .navbar .container-fluid {
+    padding-block: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .container-fluid,
+  .main-content,
+  .footer {
+    padding-inline: 16px;
+  }
+  .btn-secondary {
+    width: 100%;
+  }
+}
