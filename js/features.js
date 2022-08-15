@@ -11,7 +11,7 @@ const features = [
   },
   {
     name: "Mobile Legend",
-    image: "./assets/images/mobile-legend.png",
+    image: "./assets/images/the-royale.png",
     platform: "Mobile",
   },
   {
@@ -21,7 +21,7 @@ const features = [
   },
   {
     name: "The Royale",
-    image: "./assets/images/the-royale.png",
+    image: "./assets/images/mobile-legend.png",
     platform: "Desktop",
   },
 ];
